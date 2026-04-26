@@ -75,7 +75,9 @@
   .logo {
     font-size: 22px; font-weight: 800; letter-spacing: -0.02em;
     display: flex; align-items: center; gap: 10px;
+    text-decoration: none; color: var(--text);
   }
+  a.logo:hover { color: var(--primary); }
   .logo-mark {
     width: 40px; height: 40px;
     border-radius: 12px;
@@ -201,15 +203,13 @@
   }
   .phone {
     width: 260px; height: 520px;
-    background: var(--ink);
+    background: #0A0E14;
     border-radius: 42px;
-    padding: 8px;
+    padding: 6px;
     box-shadow:
       0 30px 80px var(--shadow-lg),
-      0 0 0 3px var(--primary),
-      0 0 0 4px color-mix(in srgb, var(--primary) 30%, transparent);
+      0 0 0 1px rgba(255,255,255,0.06);
   }
-  [data-theme="dark"] .phone { background: var(--text); }
   .phone-screen {
     width: 100%; height: 100%;
     background: var(--bg);
@@ -366,16 +366,14 @@
   .feat-phone {
     position: relative; z-index: 1;
     width: 280px; aspect-ratio: 9/19.5;
-    background: var(--ink);
-    border-radius: 38px; padding: 7px;
+    background: #0A0E14;
+    border-radius: 40px; padding: 6px;
     box-shadow:
       0 30px 70px var(--shadow-lg),
-      0 0 0 3px var(--primary),
-      0 0 0 4px color-mix(in srgb, var(--primary) 25%, transparent);
+      0 0 0 1px rgba(255,255,255,0.06);
     transform: rotate(-2deg);
     transition: transform 0.4s;
   }
-  [data-theme="dark"] .feat-phone { background: var(--text); }
   .feature-row.reverse .feat-phone { transform: rotate(2deg); }
   .feat-phone:hover { transform: rotate(0); }
   .feat-phone img {
@@ -733,7 +731,7 @@
       </div>
     </div>
     <div class="footer-bottom">
-      <span>© 2026 أماكني · محمود أشرف</span>
+      <span>© 2026 أماكني</span>
       <span>v1.0 · الإصدار ٨</span>
     </div>
   </div>
